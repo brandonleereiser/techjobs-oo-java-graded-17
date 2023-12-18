@@ -55,7 +55,6 @@ public class AbstractTest {
             value = (String) getValueMethod.invoke(fieldValue);
         }
         if (substituteEmpty && value == "") {
-
             value = "Data not available";
         }
         return value;

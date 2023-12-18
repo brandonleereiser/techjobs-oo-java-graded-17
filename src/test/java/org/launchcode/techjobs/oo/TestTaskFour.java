@@ -1,13 +1,15 @@
 package org.launchcode.techjobs.oo;
 
+import mockit.Expectations;
 import mockit.Mocked;
 import mockit.Tested;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-import static org.junit.Assert.fail;
+import static org.junit.Assert.*;
 
 /**
  * Created by LaunchCode
@@ -15,7 +17,7 @@ import static org.junit.Assert.fail;
 public class TestTaskFour extends AbstractTest {
 
     @Tested
-    org.launchcode.techjobs.oo.JobTest jobTest;
+    JobTest jobTest;
     @Mocked
     Job job;
     @Mocked
